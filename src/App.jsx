@@ -11,7 +11,7 @@ import Tribe from './components/Tribe.jsx';
 import Visit from './components/Visit.jsx';
 import Reviews from './components/Reviews.jsx';
 import Footer from './components/Footer.jsx';
-import { AudioWidget, ThemeToggle, Toast, VideoModal } from './components/UI.jsx';
+import { ThemeToggle, Toast, VideoModal } from './components/UI.jsx';
 
 export default function App() {
   const { theme, toggle: toggleTheme } = useTheme();
@@ -63,7 +63,6 @@ export default function App() {
   return (
     <>
       {/* Floating Controls */}
-      <AudioWidget showToast={showToast} />
       <ThemeToggle theme={theme} onToggle={toggleTheme} />
 
       {/* Navigation */}

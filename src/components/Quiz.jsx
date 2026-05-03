@@ -56,9 +56,9 @@ export default function Quiz({ showToast }) {
 
   const handleShare = () => {
     const badge = badges[getBadgeIdx(state.score)];
-    const text = `Aku baru dapet badge "${badge.title}" ${badge.emoji} di Borobudur Heritage! #BorobudurGenZ`;
+    const text = `Aku baru dapet badge "${badge.title}" ${badge.emoji} di Singosari Cultural Site! #SingosariHeritage`;
     if (navigator.share) {
-      navigator.share({ title: 'Borobudur Quiz', text });
+      navigator.share({ title: 'Singosari Quiz', text });
     } else {
       navigator.clipboard?.writeText(text);
       showToast('📋 Teks disalin! Share sekarang!');

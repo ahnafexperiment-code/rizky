@@ -76,16 +76,11 @@ export default function Visit({ showToast }) {
           <div className="map-card">
             <h3>🗺️ Lokasi & Rute</h3>
             <div className="google-map-wrapper" id="google-map-wrapper">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!4v1713360000000!6m8!1m7!1sCAoSLEFGMVFpcE9icHJYbG1PRm9YV0JzYjEwQzZ2SVA3S1FmN0VjYVM0a2owLVBB!2m2!1d-7.8925672!2d112.6645272!3f260!4f5!5f0.7820865974627469"
-                width="100%"
-                height="280"
-                style={{ border: 0, borderRadius: '12px' }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Google Street View Candi Singosari"
-              />
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '0.75rem' }}>
+                <img src="/assets/img/singosari/singosari-1.jpeg" alt="Candi Singosari" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
+                <img src="/assets/img/sumberawan/sumberawan-1.jpeg" alt="Candi Sumberawan" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
+                <img src="/assets/img/singosari/singosari-4.jpeg" alt="Candi Singosari Area Dwarapala" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
+              </div>
             </div>
             <div className="route-options">
               <a

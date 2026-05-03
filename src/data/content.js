@@ -4,34 +4,34 @@
 
 export const quizData = [
   {
-    q: 'Borobudur dibangun pada abad ke berapa?',
-    opts: ['Abad ke-7', 'Abad ke-8 hingga ke-9', 'Abad ke-10', 'Abad ke-11'],
+    q: 'Candi Singosari merupakan peninggalan kerajaan apa?',
+    opts: ['Majapahit', 'Singhasari', 'Kediri', 'Mataram Kuno'],
     ans: 1,
-    exp: 'Benar! Borobudur dibangun sekitar 770–835 M oleh Dinasti Syailendra.',
+    exp: 'Benar! Candi Singosari terkait erat dengan Kerajaan Singhasari di Jawa Timur.',
   },
   {
-    q: 'Berapa jumlah patung Buddha yang ada di Borobudur?',
-    opts: ['324 patung', '432 patung', '504 patung', '612 patung'],
-    ans: 2,
-    exp: 'Tepat! Ada 504 patung Buddha, masing-masing dengan posisi dan makna berbeda.',
+    q: 'Candi Sumberawan dikenal dengan bentuk utamanya berupa...',
+    opts: ['Gerbang paduraksa', 'Stupa', 'Punden berundak', 'Candi bertingkat'],
+    ans: 1,
+    exp: 'Tepat! Candi Sumberawan dikenal sebagai stupa dengan suasana kawasan yang asri.',
   },
   {
-    q: 'Borobudur ditetapkan sebagai Warisan Dunia UNESCO pada tahun?',
-    opts: ['1972', '1981', '1991', '2001'],
-    ans: 2,
-    exp: 'Binggo! Borobudur masuk Daftar Warisan Dunia UNESCO sejak tahun 1991.',
+    q: 'Ikon penjaga kawasan Singosari yang terkenal adalah...',
+    opts: ['Arca Ganesha', 'Arca Dwarapala', 'Arca Buddha', 'Arca Durga'],
+    ans: 1,
+    exp: 'Binggo! Arca Dwarapala raksasa menjadi ikon kuat kawasan Singosari.',
   },
   {
-    q: 'Panel relief tersembunyi di bawah tanah berjumlah?',
-    opts: ['80 panel', '120 panel', '160 panel', '200 panel'],
+    q: 'Lokasi ketiga yang ditonjolkan di situs ini adalah...',
+    opts: ['Candi Tikus', 'Candi Jago', 'Candi Singosari (Area Dwarapala)', 'Candi Penataran'],
     ans: 2,
-    exp: 'Correct! Ada 160 panel "Karmawibhangga" yang tersembunyi di kaki candi.',
+    exp: 'Correct! Situs ini menonjolkan Candi Singosari, Candi Sumberawan, dan area Dwarapala.',
   },
   {
-    q: 'Candi ini merupakan candi Buddha terbesar di mana?',
-    opts: ['Asia Selatan', 'Asia Tenggara', 'Dunia', 'Semua jawaban benar'],
+    q: 'Tujuan utama pelestarian situs budaya Singosari adalah...',
+    opts: ['Menaikkan tren media sosial', 'Membatasi kunjungan', 'Menjaga warisan sejarah', 'Mengubah fungsi candi'],
     ans: 2,
-    exp: 'Ya! Borobudur adalah candi Buddha terbesar di DUNIA. Kebanggaan Indonesia!',
+    exp: 'Ya! Intinya adalah menjaga warisan sejarah agar tetap hidup lintas generasi.',
   },
 ];
 
@@ -49,7 +49,7 @@ export const storyChapters = [
     title: 'Lahirnya Keajaiban',
     body: 'Dinasti Syailendra memulai pembangunan Borobudur — sebuah visi monumental yang membutuhkan lebih dari 50 tahun dan ratusan ribu pekerja terampil.',
     fact: '💡 Fun Fact: Dibangun tanpa semen!',
-    img: '/assets/img/gallery_1.png',
+    img: '/assets/img/singosari/singosari-2.jpeg',
     dir: 'right',
   },
   {
@@ -57,7 +57,7 @@ export const storyChapters = [
     title: 'Tersembunyi oleh Alam',
     body: 'Letusan Gunung Merapi dan pergeseran kekuasaan menyebabkan Borobudur terlupakan selama 8 abad. Tertimbun abu dan hutan lebat.',
     fact: '🌋 Hampir hilang selamanya',
-    img: '/assets/img/ugc_1.png',
+    img: '/assets/img/sumberawan/sumberawan-1.jpeg',
     dir: 'left',
   },
   {
@@ -65,7 +65,7 @@ export const storyChapters = [
     title: 'Ditemukan Kembali',
     body: 'Sir Thomas Stamford Raffles mengirim tim ekspedisi. Mereka menemukan gundukan misterius di tengah hutan — yang ternyata adalah candi terbesar di dunia.',
     fact: '🔍 Penemuan arkeologi terbesar Asia',
-    img: '/assets/img/gallery_1.png',
+    img: '/assets/img/singosari/singosari-3.jpeg',
     dir: 'right',
   },
   {
@@ -73,7 +73,7 @@ export const storyChapters = [
     title: 'Diakui Dunia',
     body: 'UNESCO resmi menetapkan Borobudur sebagai Situs Warisan Dunia. Indonesia bangga menjadi penjaga salah satu keajaiban peradaban manusia.',
     fact: '🏆 Top 10 keajaiban kuno dunia',
-    img: '/assets/img/ugc_1.png',
+    img: '/assets/img/sumberawan/sumberawan-2.jpeg',
     dir: 'left',
   },
   {
@@ -81,7 +81,7 @@ export const storyChapters = [
     title: 'Milik Kita, Masa Depannya',
     body: '3 juta+ pengunjung setiap tahun. Dan kali ini, kamu adalah bagian dari kisah panjang ini. Warisan ini perlu penjaga baru — generasi yang melek digital.',
     fact: '🌟 Kamu ada di sini bukan kebetulan',
-    img: '/assets/img/gallery_1.png',
+    img: '/assets/img/singosari/singosari-4.jpeg',
     dir: 'right',
   },
 ];
@@ -118,18 +118,18 @@ export const infoCards = [
 ];
 
 export const ugcPhotos = [
-  { img: '/assets/img/ugc_1.png', user: '@salsabila_wanderlust', cls: '' },
-  { img: '/assets/img/gallery_1.png', user: '@rizky.explorer', cls: 'tall' },
-  { img: '/assets/img/ugc_1.png', user: '@aulia.aesthetic', cls: '' },
-  { img: '/assets/img/gallery_1.png', user: '@dimas.lens', cls: 'wide' },
-  { img: '/assets/img/ugc_1.png', user: '@tiara.captures', cls: '' },
-  { img: '/assets/img/gallery_1.png', user: '@naufal.photos', cls: '' },
+  { img: '/assets/img/singosari/singosari-5.jpeg', user: '@salsabila_wanderlust', cls: '' },
+  { img: '/assets/img/sumberawan/sumberawan-3.jpeg', user: '@rizky.explorer', cls: 'tall' },
+  { img: '/assets/img/sumberawan/sumberawan-4.jpeg', user: '@aulia.aesthetic', cls: '' },
+  { img: '/assets/img/singosari/singosari-2.jpeg', user: '@dimas.lens', cls: 'wide' },
+  { img: '/assets/img/sumberawan/sumberawan-5.jpeg', user: '@tiara.captures', cls: '' },
+  { img: '/assets/img/sumberawan/sumberawan-6.jpeg', user: '@naufal.photos', cls: '' },
 ];
 
 export const videoItems = [
-  { id: 'video-1', tag: '#HiddenGems', title: 'Relief yang Tersembunyi di Bawah Tanah', desc: '160 panel yang tidak pernah terlihat publik...', dur: '0:58', img: '/assets/img/gallery_1.png' },
-  { id: 'video-2', tag: '#ViralMoment', title: 'Sunrise Terbaik Asia Tenggara', desc: 'Kenapa 4 pagi adalah waktu paling epik...', dur: '1:24', img: '/assets/img/ugc_1.png' },
-  { id: 'video-3', tag: '#MindBlown', title: 'Kode Geometris yang Bikin Ilmuwan Bingung', desc: 'Proporsi matematika yang sangat presisi...', dur: '2:11', img: '/assets/img/gallery_1.png' },
+  { id: 'video-1', tag: '#HiddenGems', title: 'Relief dan Detail Candi Singosari', desc: 'Sudut-sudut arsitektur yang sering terlewat pengunjung...', dur: '0:58', img: '/assets/img/singosari/singosari-3.jpeg' },
+  { id: 'video-2', tag: '#ViralMoment', title: 'Suasana Tenang Candi Sumberawan', desc: 'Nuansa alam dan stupa yang jadi favorit wisata budaya...', dur: '1:24', img: '/assets/img/sumberawan/sumberawan-7.jpeg' },
+  { id: 'video-3', tag: '#MindBlown', title: 'Ikon Dwarapala di Kawasan Singosari', desc: 'Patung penjaga raksasa dan makna simboliknya...', dur: '2:11', img: '/assets/img/singosari/singosari-4.jpeg' },
 ];
 
 export const testimonials = [
