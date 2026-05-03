@@ -38,7 +38,7 @@ export default function Hero() {
       <div className="hero-bg-container">
         <img
           src="/assets/img/hero_bg.png"
-          alt="Borobudur Temple at golden hour"
+          alt="Candi Singosari at golden hour"
           className="hero-bg-img"
         />
         <div className="hero-particles">
@@ -49,7 +49,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="hero-content">
-        <div className="hero-badge reveal-up revealed">✨ Warisan Dunia UNESCO</div>
+        <div className="hero-badge reveal-up revealed">✨ Warisan Budaya Singhasari</div>
 
         <h1 className="hero-headline reveal-up revealed">
           Jelajahi Masa Lalu,<br />
@@ -58,7 +58,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero-sub reveal-up revealed">
-          7 juta batu. 1.460 panel relief. 1 kisah yang belum pernah kamu rasakan seperti ini.
+          Jelajahi 3 titik budaya: Candi Singosari, Candi Sumberawan, dan Candi Singosari (Area Dwarapala).
         </p>
 
         <div className="hero-cta reveal-up revealed">
@@ -86,11 +86,11 @@ export default function Hero() {
           className={`hero-stats reveal-up${statsVisible ? ' revealed' : ''}`}
           ref={statsRef}
         >
-          <StatItem target={9} unit="th" label="Abad" active={statsVisible} />
+          <StatItem target={13} unit="th" label="Abad" active={statsVisible} />
           <div className="stat-divider" />
-          <StatItem target={504} label="Patung Buddha" active={statsVisible} />
+          <StatItem target={2} label="Arca Dwarapala Raksasa" active={statsVisible} />
           <div className="stat-divider" />
-          <StatItem target={2672} label="Panel Relief" active={statsVisible} />
+          <StatItem target={1} label="Kompleks Candi Utama" active={statsVisible} />
         </div>
       </div>
 

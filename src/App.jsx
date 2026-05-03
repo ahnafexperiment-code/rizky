@@ -9,6 +9,7 @@ import Story from './components/Story.jsx';
 import Quiz from './components/Quiz.jsx';
 import Tribe from './components/Tribe.jsx';
 import Visit from './components/Visit.jsx';
+import Reviews from './components/Reviews.jsx';
 import Footer from './components/Footer.jsx';
 import { AudioWidget, ThemeToggle, Toast, VideoModal } from './components/UI.jsx';
 
@@ -76,6 +77,7 @@ export default function App() {
         <Story onVideoOpen={() => setVideoOpen(true)} />
         <Quiz showToast={showToast} />
         <UGCGallery />
+        <Reviews />
         <Tribe showToast={showToast} />
         <Visit showToast={showToast} />
       </main>

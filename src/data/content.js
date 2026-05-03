@@ -141,15 +141,13 @@ export const testimonials = [
 ];
 
 export const panoSpots = [
-  { id: 1, label: '📍 Gerbang Utama', imageUrl: 'https://pannellum.org/images/bma-1.jpg', pitch: 0, yaw: 120 },
-  { id: 2, label: '🏛️ Teras Pertama', imageUrl: 'https://pannellum.org/images/bma-1.jpg', pitch: -5, yaw: 200 },
-  { id: 3, label: '⛩️ Stupa Puncak', imageUrl: 'https://pannellum.org/images/bma-1.jpg', pitch: 10, yaw: 60 },
+  { id: 1, label: '⛩️ Candi Singosari', imageUrl: 'https://pannellum.org/images/bma-1.jpg', pitch: 0, yaw: 120 },
+  { id: 2, label: '🧘 Candi Sumberawan', imageUrl: 'https://pannellum.org/images/bma-1.jpg', pitch: -5, yaw: 200 },
+  { id: 3, label: '🗿 Candi Singosari (Area Dwarapala)', imageUrl: 'https://pannellum.org/images/bma-1.jpg', pitch: 10, yaw: 60 },
 ];
 
 export const mapZones = [
-  { id: 'z1', name: 'Gerbang Utama', top: '80%', left: '45%', emoji: '🚪', desc: 'Pintu masuk utama kompleks. Titik awal perjalanan spiritual menuju puncak.' },
-  { id: 'z2', name: 'Teras Kamadhatu', top: '65%', left: '40%', emoji: '🌍', desc: 'Alam nafsu duniawi — relief tersembunyi di bawah batu terdapat 160 panel karmen.' },
-  { id: 'z3', name: 'Teras Rupadhatu', top: '48%', left: '38%', emoji: '🧘', desc: 'Alam peralihan — 432 patung Buddha duduk di dalam relung-relung terbuka.' },
-  { id: 'z4', name: 'Teras Arupadhatu', top: '32%', left: '44%', emoji: '☁️', desc: 'Alam tanpa wujud — 72 stupa berlubang menyimpan patung Buddha yang tak terlihat.' },
-  { id: 'z5', name: 'Stupa Induk', top: '15%', left: '46%', emoji: '✨', desc: 'Puncak tertinggi, melambangkan nirwana — kekosongan sempurna dan pencerahan sejati.' },
+  { id: 'z1', name: 'Candi Singosari', top: '78%', left: '44%', emoji: '⛩️', desc: 'Candi utama peninggalan era Singhasari dengan arsitektur khas Jawa Timur.' },
+  { id: 'z2', name: 'Candi Sumberawan', top: '52%', left: '36%', emoji: '🧘', desc: 'Stupa unik di kawasan sumber mata air, suasana tenang untuk wisata budaya.' },
+  { id: 'z3', name: 'Candi Singosari (Dwarapala)', top: '30%', left: '48%', emoji: '🗿', desc: 'Area arca Dwarapala raksasa yang menjadi ikon kuat kawasan Singosari.' },
 ];

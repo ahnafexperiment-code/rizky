@@ -7,9 +7,9 @@ export default function Visit({ showToast }) {
     <section id="visit" className="visit-section">
       <div className="container">
         <div className={`section-header reveal-up${visible ? ' revealed' : ''}`} ref={ref}>
-          <div className="section-label">📍 Visit</div>
+          <div className="section-label">📍 Kunjungi Singosari</div>
           <h2 className="section-title">
-            Rencanakan <span className="gradient-text">Petualanganmu</span>
+            Rencanakan <span className="gradient-text">Kunjungan Budayamu</span>
           </h2>
           <p className="section-desc">Semua yang kamu butuhkan sebelum berangkat.</p>
         </div>
@@ -77,19 +77,19 @@ export default function Visit({ showToast }) {
             <h3>🗺️ Lokasi & Rute</h3>
             <div className="google-map-wrapper" id="google-map-wrapper">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15812.3424!2d110.2037!3d-7.6079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a4b6abf9a73cd%3A0x2b2affa1c6d0938b!2sBorobudur%20Temple%20Compounds!5e0!3m2!1sid!2sid!4v1713360000000!5m2!1sid!2sid"
+                src="https://www.google.com/maps/embed?pb=!4v1713360000000!6m8!1m7!1sCAoSLEFGMVFpcE9icHJYbG1PRm9YV0JzYjEwQzZ2SVA3S1FmN0VjYVM0a2owLVBB!2m2!1d-7.8925672!2d112.6645272!3f260!4f5!5f0.7820865974627469"
                 width="100%"
                 height="280"
                 style={{ border: 0, borderRadius: '12px' }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Peta Lokasi Borobudur"
+                title="Google Street View Candi Singosari"
               />
             </div>
             <div className="route-options">
               <a
-                href="https://maps.google.com/?q=Borobudur+Temple+Magelang"
+                href="https://maps.google.com/?q=Candi+Singosari+Malang"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-ghost btn-sm"
@@ -98,7 +98,7 @@ export default function Visit({ showToast }) {
                 📍 Buka Google Maps
               </a>
               <a
-                href="https://waze.com/ul?q=Borobudur+Temple"
+                href="https://waze.com/ul?q=Candi+Singosari+Malang"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-ghost btn-sm"

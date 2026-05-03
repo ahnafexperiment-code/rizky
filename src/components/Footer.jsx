@@ -12,8 +12,8 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <div className="footer-logo">⛩ BOROBUDUR</div>
-            <p>Warisan dunia untuk generasi yang akan datang. Jaga, lestarikan, dan ceritakan.</p>
+            <div className="footer-logo">⛩ SINGOSARI</div>
+            <p>Ruang budaya untuk mengenal jejak Singhasari, merawat cagar budaya, dan berbagi cerita lokal.</p>
             <div className="footer-social">
               <a href="#" className="social-btn" id="footer-ig" aria-label="Instagram">📸</a>
               <a href="#" className="social-btn" id="footer-tiktok" aria-label="TikTok">🎵</a>
@@ -54,8 +54,8 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2025 Borobudur Heritage. Made with ❤️ for Gen Z Indonesia.</p>
-          <p className="footer-hashtag">#BorobudurGenZ</p>
+          <p>© 2026 Singosari Cultural Site. Made for pegiat budaya Indonesia.</p>
+          <p className="footer-hashtag">#SingosariHeritage</p>
         </div>
       </div>
     </footer>

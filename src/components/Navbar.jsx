@@ -30,7 +30,7 @@ export default function Navbar({ theme, onThemeToggle }) {
         {/* Logo */}
         <button className="nav-logo" onClick={() => smoothScroll('home')} aria-label="Go to home">
           <span className="logo-icon">⛩</span>
-          <span className="logo-text">BOROBUDUR</span>
+          <span className="logo-text">SINGOSARI</span>
         </button>
 
         {/* Desktop Links */}
