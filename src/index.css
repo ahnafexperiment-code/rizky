@@ -1671,7 +1671,7 @@ section { padding: var(--space-xl) 0; position: relative; }
   padding: 0.4rem 0;
 }
 
-.google-map-wrapper { margin-bottom: 1rem; border-radius: 12px; overflow: hidden; }
+.visit-image-gallery { margin-bottom: 1rem; border-radius: 12px; overflow: hidden; }
 
 .route-options {
   display: flex;
