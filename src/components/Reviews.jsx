@@ -1,7 +1,7 @@
 const reviews = [
   { name: 'Nabila R.', rating: 5, text: 'Tempatnya tenang dan bersejarah. Penjelasan tentang masa Singhasari sangat membantu.' },
-  { name: 'Aditya P.', rating: 5, text: 'Arca Dwarapala-nya ikonik banget. Cocok untuk wisata edukasi bareng keluarga.' },
-  { name: 'Fauzan M.', rating: 4, text: 'Akses mudah dari Kota Malang. Area bersih dan spot foto bagus.' },
+  { name: 'Aditya P.', rating: 5, text: 'Museum Singhasari bikin kunjungan lebih masuk akal karena koleksinya memberi konteks ke situs di luar.' },
+  { name: 'Fauzan M.', rating: 4, text: 'Rutenya enak: Singosari, Sumberawan, lalu museum. Area bersih dan cocok untuk wisata edukasi.' },
 ];
 
 export default function Reviews() {
@@ -10,8 +10,8 @@ export default function Reviews() {
       <div className="container">
         <div className="section-header">
           <div className="section-label">⭐ Ulasan Pengunjung</div>
-          <h2 className="section-title">Review <span className="gradient-text">Candi Singosari</span></h2>
-          <p className="section-desc">Ringkasan pengalaman pengunjung dari kunjungan budaya di kawasan Singosari.</p>
+          <h2 className="section-title">Review <span className="gradient-text">Kawasan Singosari</span></h2>
+          <p className="section-desc">Ringkasan pengalaman pengunjung dari rute Candi Singosari, Candi Sumberawan, dan Museum Singhasari.</p>
         </div>
         <div className="visit-grid">
           {reviews.map((review) => (

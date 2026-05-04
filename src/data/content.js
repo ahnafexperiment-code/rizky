@@ -23,9 +23,9 @@ export const quizData = [
   },
   {
     q: 'Lokasi ketiga yang ditonjolkan di situs ini adalah...',
-    opts: ['Candi Tikus', 'Candi Jago', 'Candi Singosari (Area Dwarapala)', 'Candi Penataran'],
-    ans: 2,
-    exp: 'Correct! Situs ini menonjolkan Candi Singosari, Candi Sumberawan, dan area Dwarapala.',
+    opts: ['Candi Tikus', 'Museum Singhasari', 'Candi Jago', 'Candi Penataran'],
+    ans: 1,
+    exp: 'Benar! Fokus situs ini sekarang ada pada Candi Singosari, Candi Sumberawan, dan Museum Singhasari.',
   },
   {
     q: 'Tujuan utama pelestarian situs budaya Singosari adalah...',
@@ -37,51 +37,51 @@ export const quizData = [
 
 export const badges = [
   { emoji: '🥚', title: 'Pemula', desc: 'Masih perlu belajar nih! Coba explore section The Story dulu.' },
-  { emoji: '🌱', title: 'Penjelajah Muda', desc: 'Lumayan! Kamu sudah mulai mengenal Borobudur.' },
+  { emoji: '🌱', title: 'Penjelajah Muda', desc: 'Lumayan! Kamu sudah mulai mengenal kawasan Singhasari.' },
   { emoji: '🏛️', title: 'Pencinta Budaya', desc: 'Bagus! Kamu benar-benar peduli sejarah Indonesia.' },
-  { emoji: '⭐', title: 'Duta Budaya', desc: 'Hampir sempurna! Kamu layak jadi guide Borobudur.' },
+  { emoji: '⭐', title: 'Duta Budaya', desc: 'Hampir sempurna! Kamu layak jadi pemandu Singhasari.' },
   { emoji: '🏆', title: 'Penjelajah Sejati', desc: 'PERFECT! Kamu adalah penjaga warisan budaya sesungguhnya!' },
 ];
 
 export const storyChapters = [
   {
-    year: '800 M',
-    title: 'Lahirnya Keajaiban',
-    body: 'Dinasti Syailendra memulai pembangunan Borobudur — sebuah visi monumental yang membutuhkan lebih dari 50 tahun dan ratusan ribu pekerja terampil.',
-    fact: '💡 Fun Fact: Dibangun tanpa semen!',
+    year: '1222 M',
+    title: 'Lahirnya Singhasari',
+    body: 'Kerajaan Singhasari tumbuh sebagai salah satu pusat kekuasaan penting di Jawa Timur, membentuk jejak politik, spiritual, dan seni yang masih terasa sampai hari ini.',
+    fact: 'Titik awal narasi kawasan budaya Singhasari',
     img: '/assets/img/singosari/singosari-2.jpeg',
     dir: 'right',
   },
   {
-    year: '1006 M',
-    title: 'Tersembunyi oleh Alam',
-    body: 'Letusan Gunung Merapi dan pergeseran kekuasaan menyebabkan Borobudur terlupakan selama 8 abad. Tertimbun abu dan hutan lebat.',
-    fact: '🌋 Hampir hilang selamanya',
+    year: 'Abad ke-13',
+    title: 'Candi dan Stupa Kawasan',
+    body: 'Candi Singosari dan Candi Sumberawan menjadi penanda berbeda dari lanskap budaya ini: satu dengan karakter arsitektur Jawa Timur, satu lagi dengan bentuk stupa yang tenang di lereng.',
+    fact: 'Dua situs, dua suasana, satu garis sejarah',
     img: '/assets/img/sumberawan/sumberawan-1.jpeg',
     dir: 'left',
   },
   {
-    year: '1814 M',
-    title: 'Ditemukan Kembali',
-    body: 'Sir Thomas Stamford Raffles mengirim tim ekspedisi. Mereka menemukan gundukan misterius di tengah hutan — yang ternyata adalah candi terbesar di dunia.',
-    fact: '🔍 Penemuan arkeologi terbesar Asia',
-    img: '/assets/img/singosari/singosari-3.jpeg',
+    year: 'Kini',
+    title: 'Museum Menjaga Detail',
+    body: 'Museum Singhasari melengkapi kunjungan lapangan dengan koleksi arca, fragmen bata, panel interpretasi, dan display budaya yang membantu pengunjung membaca konteks situs secara utuh.',
+    fact: 'Dari ruang pamer ke lanskap situs',
+    img: '/assets/img/museum/museum-4.jpeg',
     dir: 'right',
   },
   {
-    year: '1991 M',
-    title: 'Diakui Dunia',
-    body: 'UNESCO resmi menetapkan Borobudur sebagai Situs Warisan Dunia. Indonesia bangga menjadi penjaga salah satu keajaiban peradaban manusia.',
-    fact: '🏆 Top 10 keajaiban kuno dunia',
-    img: '/assets/img/sumberawan/sumberawan-2.jpeg',
+    year: 'Koleksi',
+    title: 'Artefak yang Didekatkan',
+    body: 'Tidak semua cerita bisa dibaca langsung di candi. Di museum, pengunjung bisa melihat pahatan, fragmen, dan benda pendukung dengan jarak yang lebih dekat dan penjelasan yang lebih terarah.',
+    fact: 'Interpretasi yang lebih mudah diakses',
+    img: '/assets/img/museum/museum-13.jpeg',
     dir: 'left',
   },
   {
-    year: 'Kini',
-    title: 'Milik Kita, Masa Depannya',
-    body: '3 juta+ pengunjung setiap tahun. Dan kali ini, kamu adalah bagian dari kisah panjang ini. Warisan ini perlu penjaga baru — generasi yang melek digital.',
-    fact: '🌟 Kamu ada di sini bukan kebetulan',
-    img: '/assets/img/singosari/singosari-4.jpeg',
+    year: 'Sekarang',
+    title: 'Rute Budaya yang Lengkap',
+    body: 'Kawasan Singhasari lebih kuat saat dilihat sebagai satu rangkaian: Candi Singosari, Candi Sumberawan, lalu Museum Singhasari sebagai ruang baca dan penutup kunjungan.',
+    fact: 'Tiga titik, satu pengalaman budaya',
+    img: '/assets/img/museum/museum-8.jpeg',
     dir: 'right',
   },
 ];
@@ -89,31 +89,31 @@ export const storyChapters = [
 export const infoCards = [
   {
     id: 'info-1',
-    icon: '🪨',
-    number: '2 Juta',
-    label: 'Blok Batu Andesit',
-    popup: 'Setara 60.000 gajah! Batu-batu ini dipotong dan dipasang dengan presisi tinggi tanpa menggunakan perekat — hanya sistem interlocking yang jenius.',
+    icon: '⛩️',
+    number: '3',
+    label: 'Titik Kunjungan Utama',
+    popup: 'Rangkaian utama situs ini kini mencakup Candi Singosari, Candi Sumberawan, dan Museum Singhasari.',
   },
   {
     id: 'info-2',
-    icon: '📐',
-    number: '34.5 m',
-    label: 'Tinggi Asli Struktur',
-    popup: 'Setinggi gedung 10 lantai! Tinggi aslinya mencapai 42 meter termasuk chattravali (payung puncak) yang kini sudah tidak ada.',
+    icon: '🕰️',
+    number: '13',
+    label: 'Abad Jejak Sejarah',
+    popup: 'Narasi utama kawasan ini bergerak dari warisan Singhasari abad ke-13 hingga cara modern mempresentasikannya kembali lewat museum.',
   },
   {
     id: 'info-3',
-    icon: '🎭',
-    number: '1.460',
-    label: 'Panel Relief Naratif',
-    popup: 'Buku terbesar di dunia! Jika dijajarkan, panel-panel ini akan membentang sepanjang 3 km — ensiklopedia visual kehidupan manusia abad ke-9.',
+    icon: '🧱',
+    number: '20+',
+    label: 'Dokumentasi Foto Museum',
+    popup: 'Set foto museum memperlihatkan arca, koleksi bata kuno, panel sejarah, dan display budaya pendukung yang memperkaya pengalaman situs.',
   },
   {
     id: 'info-4',
-    icon: '⏳',
-    number: '75 Tahun',
-    label: 'Waktu Pembangunan',
-    popup: 'Lebih lama dari rata-rata umur manusia! Dimulai sekitar 770 M dan rampung sekitar 835 M pada masa pemerintahan Raja Samaratungga.',
+    icon: '🏛️',
+    number: '1',
+    label: 'Museum Pendamping Situs',
+    popup: 'Museum Singhasari berfungsi sebagai ruang baca konteks, membantu pengunjung memahami artefak dan hubungan antarsitus di kawasan.',
   },
 ];
 
@@ -122,14 +122,14 @@ export const ugcPhotos = [
   { img: '/assets/img/sumberawan/sumberawan-3.jpeg', user: '@rizky.explorer', cls: 'tall' },
   { img: '/assets/img/sumberawan/sumberawan-4.jpeg', user: '@aulia.aesthetic', cls: '' },
   { img: '/assets/img/singosari/singosari-2.jpeg', user: '@dimas.lens', cls: 'wide' },
-  { img: '/assets/img/sumberawan/sumberawan-5.jpeg', user: '@tiara.captures', cls: '' },
-  { img: '/assets/img/sumberawan/sumberawan-6.jpeg', user: '@naufal.photos', cls: '' },
+  { img: '/assets/img/museum/museum-8.jpeg', user: '@tiara.captures', cls: '' },
+  { img: '/assets/img/museum/museum-4.jpeg', user: '@naufal.photos', cls: '' },
 ];
 
 export const videoItems = [
   { id: 'video-1', tag: '#HiddenGems', title: 'Relief dan Detail Candi Singosari', desc: 'Sudut-sudut arsitektur yang sering terlewat pengunjung...', dur: '0:58', img: '/assets/img/singosari/singosari-3.jpeg' },
   { id: 'video-2', tag: '#ViralMoment', title: 'Suasana Tenang Candi Sumberawan', desc: 'Nuansa alam dan stupa yang jadi favorit wisata budaya...', dur: '1:24', img: '/assets/img/sumberawan/sumberawan-7.jpeg' },
-  { id: 'video-3', tag: '#MindBlown', title: 'Ikon Dwarapala di Kawasan Singosari', desc: 'Patung penjaga raksasa dan makna simboliknya...', dur: '2:11', img: '/assets/img/singosari/singosari-4.jpeg' },
+  { id: 'video-3', tag: '#MuseumWalk', title: 'Koleksi Utama Museum Singhasari', desc: 'Arca, fragmen batu, dan display budaya dalam satu rute singkat...', dur: '2:11', img: '/assets/img/museum/museum-17.jpeg' },
 ];
 
 export const testimonials = [
@@ -143,11 +143,41 @@ export const testimonials = [
 export const panoSpots = [
   { id: 1, label: '⛩️ Candi Singosari', imageUrl: 'https://pannellum.org/images/bma-1.jpg', pitch: 0, yaw: 120 },
   { id: 2, label: '🧘 Candi Sumberawan', imageUrl: 'https://pannellum.org/images/bma-1.jpg', pitch: -5, yaw: 200 },
-  { id: 3, label: '🗿 Candi Singosari (Area Dwarapala)', imageUrl: 'https://pannellum.org/images/bma-1.jpg', pitch: 10, yaw: 60 },
+  { id: 3, label: '🏛️ Museum Singhasari', imageUrl: 'https://pannellum.org/images/bma-1.jpg', pitch: 10, yaw: 60 },
 ];
 
 export const mapZones = [
   { id: 'z1', name: 'Candi Singosari', top: '78%', left: '44%', emoji: '⛩️', desc: 'Candi utama peninggalan era Singhasari dengan arsitektur khas Jawa Timur.' },
   { id: 'z2', name: 'Candi Sumberawan', top: '52%', left: '36%', emoji: '🧘', desc: 'Stupa unik di kawasan sumber mata air, suasana tenang untuk wisata budaya.' },
-  { id: 'z3', name: 'Candi Singosari (Dwarapala)', top: '30%', left: '48%', emoji: '🗿', desc: 'Area arca Dwarapala raksasa yang menjadi ikon kuat kawasan Singosari.' },
+  { id: 'z3', name: 'Museum Singhasari', top: '30%', left: '48%', emoji: '🏛️', desc: 'Ruang pamer yang melengkapi kunjungan situs dengan koleksi artefak, panel sejarah, dan interpretasi kawasan.' },
+];
+
+export const museumHighlights = [
+  {
+    id: 'museum-collection',
+    title: 'Koleksi Arca dan Fragmen',
+    text: 'Arca batu dan fragmen pahat memberi jarak pandang yang lebih dekat terhadap detail visual era Singhasari.',
+    img: '/assets/img/museum/museum-4.jpeg',
+  },
+  {
+    id: 'museum-context',
+    title: 'Panel Sejarah Kawasan',
+    text: 'Museum membantu membaca relasi antar situs di Malang Raya lewat panel penjelasan yang lebih runtut.',
+    img: '/assets/img/museum/museum-13.jpeg',
+  },
+  {
+    id: 'museum-culture',
+    title: 'Display Budaya Pendukung',
+    text: 'Bukan hanya candi. Koleksi topeng dan artefak lain memberi konteks budaya yang masih hidup hingga sekarang.',
+    img: '/assets/img/museum/museum-8.jpeg',
+  },
+];
+
+export const museumGallery = [
+  '/assets/img/museum/museum-1.jpeg',
+  '/assets/img/museum/museum-4.jpeg',
+  '/assets/img/museum/museum-8.jpeg',
+  '/assets/img/museum/museum-13.jpeg',
+  '/assets/img/museum/museum-17.jpeg',
+  '/assets/img/museum/museum-19.jpeg',
 ];

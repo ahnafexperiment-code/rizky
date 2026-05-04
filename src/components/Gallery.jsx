@@ -38,7 +38,7 @@ function Lightbox({ photo, onClose }) {
       <button className="modal-close" onClick={onClose} aria-label="Close">✕</button>
       <img src={photo.img} alt={photo.user} onClick={e => e.stopPropagation()} />
       <p className="ugc-lb-user">{photo.user}</p>
-      <p className="ugc-lb-tag">#BorobudurGenZ</p>
+      <p className="ugc-lb-tag">#SingosariHeritage</p>
     </div>
   );
 }
@@ -52,10 +52,10 @@ export function UGCGallery() {
     <section className="ugc-section">
       <div className="container">
         <div className={`section-header reveal-up${visible ? ' revealed' : ''}`} ref={ref}>
-          <div className="section-label">📸 UGC Gallery</div>
+          <div className="section-label">UGC Gallery</div>
           <h2 className="section-title">Foto <span className="gradient-text">Dari Kamu</span></h2>
           <p className="section-desc">
-            Tag <strong>#BorobudurGenZ</strong> di Instagram / TikTok — fotomu bisa muncul di sini!
+            Tag <strong>#SingosariHeritage</strong> di Instagram atau TikTok, lalu tampilkan sudut favoritmu dari Singosari, Sumberawan, atau museum.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export function UGCGallery() {
               <img src={p.img} alt={`Photo by ${p.user}`} loading="lazy" />
               <div className="ugc-overlay">
                 <span className="ugc-user">{p.user}</span>
-                <span className="ugc-tag">#BorobudurGenZ</span>
+                <span className="ugc-tag">#SingosariHeritage</span>
               </div>
             </div>
           ))}

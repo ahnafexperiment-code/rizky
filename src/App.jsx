@@ -5,6 +5,7 @@ import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import { Testimonials, UGCGallery } from './components/Gallery.jsx';
 import Explore from './components/Explore.jsx';
+import Museum from './components/Museum.jsx';
 import Story from './components/Story.jsx';
 import Quiz from './components/Quiz.jsx';
 import Tribe from './components/Tribe.jsx';
@@ -56,8 +57,8 @@ export default function App() {
 
   // Log branding
   useEffect(() => {
-    console.log('%c⛩ BOROBUDUR', 'font-size:32px;font-weight:900;color:#d4af37;');
-    console.log('%cJelajahi Masa Lalu, Temukan Inspirasi Masa Depan 🌟', 'color:#a78bfa;font-size:14px');
+    console.log('%cSINGOSARI CULTURAL SITE', 'font-size:32px;font-weight:900;color:#d4af37;');
+    console.log('%cSingosari, Sumberawan, dan Museum Singhasari', 'color:#a78bfa;font-size:14px');
   }, []);
 
   return (
@@ -73,6 +74,7 @@ export default function App() {
         <Hero />
         <Testimonials />
         <Explore />
+        <Museum />
         <Story onVideoOpen={() => setVideoOpen(true)} />
         <Quiz showToast={showToast} />
         <UGCGallery />

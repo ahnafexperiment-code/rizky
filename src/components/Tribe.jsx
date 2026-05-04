@@ -31,7 +31,7 @@ export default function Tribe({ showToast }) {
           <div className="tribe-card" id="tribe-volunteer">
             <div className="tribe-icon">🌱</div>
             <h3>Volunteer Program</h3>
-            <p>Jadi relawan pemandu, fotografer komunitas, atau kreator konten budaya Borobudur.</p>
+            <p>Jadi relawan pemandu, fotografer komunitas, atau kreator konten untuk kawasan Singhasari dan museum.</p>
             <div className="tribe-badge-preview">Badge: 🥉 Penjaga Muda</div>
             <button
               className="btn btn-outline"
@@ -47,7 +47,7 @@ export default function Tribe({ showToast }) {
             <div className="tribe-new-tag">🔥 Terbaru</div>
             <div className="tribe-icon">👕</div>
             <h3>Merch Eksklusif</h3>
-            <p>Koleksi terbatas — kaos, tote bag, dan aksesoris bergrafis relief Borobudur.</p>
+            <p>Koleksi terbatas berupa kaos, tote bag, dan aksesoris dengan visual Singhasari, Sumberawan, dan Museum Singhasari.</p>
             <div className="tribe-badge-preview">Badge: 🥈 Duta Budaya</div>
             <button
               className="btn btn-primary"

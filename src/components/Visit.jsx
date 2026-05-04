@@ -79,7 +79,7 @@ export default function Visit({ showToast }) {
               <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '0.75rem' }}>
                 <img src="/assets/img/singosari/singosari-1.jpeg" alt="Candi Singosari" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
                 <img src="/assets/img/sumberawan/sumberawan-1.jpeg" alt="Candi Sumberawan" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
-                <img src="/assets/img/singosari/singosari-4.jpeg" alt="Candi Singosari Area Dwarapala" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
+                <img src="/assets/img/museum/museum-4.jpeg" alt="Museum Singhasari" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
               </div>
             </div>
             <div className="route-options">
@@ -93,13 +93,22 @@ export default function Visit({ showToast }) {
                 📍 Buka Google Maps
               </a>
               <a
-                href="https://waze.com/ul?q=Candi+Singosari+Malang"
+                href="https://maps.google.com/?q=Candi+Sumberawan+Malang"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-ghost btn-sm"
                 id="visit-waze-btn"
               >
-                🚗 Buka Waze
+                🌿 Lihat Sumberawan
+              </a>
+              <a
+                href="https://maps.google.com/?q=Museum+Singhasari+Malang"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-ghost btn-sm"
+                id="visit-museum-btn"
+              >
+                🏛️ Lihat Museum
               </a>
             </div>
           </div>

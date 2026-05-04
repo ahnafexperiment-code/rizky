@@ -149,9 +149,9 @@ export default function Explore() {
     <section id="explore" className="explore-section">
       <div className="container">
         <div className={`section-header reveal-up${visible ? ' revealed' : ''}`} ref={ref}>
-          <div className="section-label">🗺️ Explore</div>
+          <div className="section-label">Explore</div>
           <h2 className="section-title">Masuk ke <span className="gradient-text">Dunia Lain</span></h2>
-          <p className="section-desc">Berjalan-jalan di koridor sejarah tanpa harus ke Magelang dulu.</p>
+          <p className="section-desc">Telusuri tiga titik utama kawasan Singhasari dalam satu alur kunjungan digital.</p>
         </div>
 
         <VirtualTour />

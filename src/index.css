@@ -889,6 +889,78 @@ section { padding: var(--space-xl) 0; position: relative; }
 }
 
 /* ===== STORY / SCROLLYTELLING ===== */
+.museum-section {
+  background:
+    radial-gradient(circle at top left, rgba(212,175,55,0.12), transparent 35%),
+    linear-gradient(180deg, var(--clr-bg) 0%, var(--clr-bg-2) 100%);
+}
+
+.museum-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.museum-card {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s var(--ease-smooth), border-color 0.3s var(--ease-smooth);
+}
+
+.museum-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--clr-primary);
+}
+
+.museum-card-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.museum-card-body {
+  padding: 1.5rem;
+}
+
+.museum-card-body h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.museum-card-body p {
+  color: var(--clr-text-muted);
+  font-size: 0.95rem;
+}
+
+.museum-strip {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.museum-strip-item {
+  min-height: 220px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--clr-border);
+  background: var(--clr-surface);
+}
+
+.museum-strip-item.featured {
+  grid-row: span 2;
+}
+
+.museum-strip-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .story-section {
   background: var(--clr-bg-2);
 }
@@ -1807,6 +1879,9 @@ section { padding: var(--space-xl) 0; position: relative; }
   .story-chapter:nth-child(even) .chapter-year { border-left: none; border-bottom: 3px solid var(--clr-border); }
   .interactive-map { grid-template-columns: 1fr; }
   .map-canvas { min-height: 300px; }
+  .museum-highlights { grid-template-columns: 1fr; }
+  .museum-strip { grid-template-columns: 1fr 1fr; }
+  .museum-strip-item.featured { grid-row: auto; grid-column: span 2; }
 }
 
 /* Mobile */
@@ -1844,6 +1919,8 @@ section { padding: var(--space-xl) 0; position: relative; }
   .visit-grid { grid-template-columns: 1fr; }
 
   .panorama-viewer { height: 300px; }
+  .museum-strip { grid-template-columns: 1fr; }
+  .museum-strip-item.featured { grid-column: auto; }
 }
 
 @media (max-width: 480px) {

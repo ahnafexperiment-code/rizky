@@ -49,7 +49,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="hero-content">
-        <div className="hero-badge reveal-up revealed">✨ Warisan Budaya Singhasari</div>
+        <div className="hero-badge reveal-up revealed">Warisan Budaya Singhasari</div>
 
         <h1 className="hero-headline reveal-up revealed">
           Jelajahi Masa Lalu,<br />
@@ -58,7 +58,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero-sub reveal-up revealed">
-          Jelajahi 3 titik budaya: Candi Singosari, Candi Sumberawan, dan Candi Singosari (Area Dwarapala).
+          Jelajahi tiga titik budaya: Candi Singosari, Candi Sumberawan, dan Museum Singhasari.
         </p>
 
         <div className="hero-cta reveal-up revealed">
@@ -86,11 +86,11 @@ export default function Hero() {
           className={`hero-stats reveal-up${statsVisible ? ' revealed' : ''}`}
           ref={statsRef}
         >
-          <StatItem target={13} unit="th" label="Abad" active={statsVisible} />
+          <StatItem target={13} unit="th" label="Jejak Sejarah" active={statsVisible} />
           <div className="stat-divider" />
-          <StatItem target={2} label="Arca Dwarapala Raksasa" active={statsVisible} />
+          <StatItem target={3} label="Titik Utama" active={statsVisible} />
           <div className="stat-divider" />
-          <StatItem target={1} label="Kompleks Candi Utama" active={statsVisible} />
+          <StatItem target={1} label="Rute Budaya" active={statsVisible} />
         </div>
       </div>
 
