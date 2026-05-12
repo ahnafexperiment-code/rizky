@@ -1,6 +1,5 @@
-import { useState } from 'react';
 import { useReveal, useTimelineProgress } from '../hooks/index.js';
-import { storyChapters, infoCards, videoItems } from '../data/content.js';
+import { storyChapters, infoCards } from '../data/content.js';
 
 // ── Story Chapter ──────────────────────────────────────
 function Chapter({ chapter, index }) {
@@ -44,34 +43,11 @@ function InfoCard({ card }) {
   );
 }
 
-// ── Video Card ─────────────────────────────────────────
-function VideoCard({ item, onOpen }) {
-  return (
-    <div className="video-card" id={item.id} onClick={onOpen} role="button" tabIndex={0}>
-      <div className="video-thumb">
-        <img src={item.img} alt={item.title} loading="lazy" />
-        <div className="video-play-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M8 5v14l11-7z" />
-          </svg>
-        </div>
-        <div className="video-duration">{item.dur}</div>
-      </div>
-      <div className="video-info">
-        <div className="video-tag">{item.tag}</div>
-        <h4>{item.title}</h4>
-        <p>{item.desc}</p>
-      </div>
-    </div>
-  );
-}
-
 // ── Story Section ──────────────────────────────────────
-export default function Story({ onVideoOpen }) {
+export default function Story() {
   const progress = useTimelineProgress('story');
   const [headerRef, headerVisible] = useReveal(0.15);
   const [infoRef, infoVisible] = useReveal(0.15);
-  const [videoRef, videoVisible] = useReveal(0.15);
 
   return (
     <section id="story" className="story-section">
@@ -104,16 +80,6 @@ export default function Story({ onVideoOpen }) {
           <h3 className="subsection-title">📊 Fakta dalam Angka</h3>
           <div className="infographic-grid">
             {infoCards.map(card => <InfoCard key={card.id} card={card} />)}
-          </div>
-        </div>
-
-        {/* Short-form Videos */}
-        <div className={`videos-section reveal-up${videoVisible ? ' revealed' : ''}`} ref={videoRef}>
-          <h3 className="subsection-title">🎬 Hidden Gems — Sisi yang Jarang Dilihat</h3>
-          <div className="video-grid">
-            {videoItems.map(item => (
-              <VideoCard key={item.id} item={item} onOpen={onVideoOpen} />
-            ))}
           </div>
         </div>
       </div>

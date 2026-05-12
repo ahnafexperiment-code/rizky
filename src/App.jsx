@@ -8,16 +8,14 @@ import Explore from './components/Explore.jsx';
 import Museum from './components/Museum.jsx';
 import Story from './components/Story.jsx';
 import Quiz from './components/Quiz.jsx';
-import Tribe from './components/Tribe.jsx';
 import Visit from './components/Visit.jsx';
 import Reviews from './components/Reviews.jsx';
 import Footer from './components/Footer.jsx';
-import { ThemeToggle, Toast, VideoModal } from './components/UI.jsx';
+import { ThemeToggle, Toast } from './components/UI.jsx';
 
 export default function App() {
   const { theme, toggle: toggleTheme } = useTheme();
   const { toast, showToast } = useToast();
-  const [videoOpen, setVideoOpen] = useState(false);
 
   // Ripple effect on all .btn elements
   useEffect(() => {
@@ -48,13 +46,6 @@ export default function App() {
     return () => document.removeEventListener('click', handler);
   }, []);
 
-  // Keyboard close modal
-  useEffect(() => {
-    const handler = (e) => { if (e.key === 'Escape') setVideoOpen(false); };
-    document.addEventListener('keydown', handler);
-    return () => document.removeEventListener('keydown', handler);
-  }, []);
-
   // Log branding
   useEffect(() => {
     console.log('%cSINGOSARI CULTURAL SITE', 'font-size:32px;font-weight:900;color:#d4af37;');
@@ -75,18 +66,16 @@ export default function App() {
         <Testimonials />
         <Explore />
         <Museum />
-        <Story onVideoOpen={() => setVideoOpen(true)} />
+        <Story />
         <Quiz showToast={showToast} />
         <UGCGallery />
         <Reviews />
-        <Tribe showToast={showToast} />
-        <Visit showToast={showToast} />
+        <Visit />
       </main>
 
       <Footer />
 
       {/* Overlays */}
-      <VideoModal open={videoOpen} onClose={() => setVideoOpen(false)} />
       <Toast toast={toast} />
     </>
   );

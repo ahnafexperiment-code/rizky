@@ -26,19 +26,9 @@ export default function Footer() {
             <h4>Jelajahi</h4>
             <ul>
               <li><button onClick={() => smoothScroll('home')}>Home</button></li>
-              <li><button onClick={() => smoothScroll('explore')}>Virtual Tour</button></li>
+              <li><button onClick={() => smoothScroll('explore')}>Explore</button></li>
               <li><button onClick={() => smoothScroll('museum')}>Museum</button></li>
               <li><button onClick={() => smoothScroll('story')}>Sejarah</button></li>
-            </ul>
-          </div>
-
-          <div className="footer-links-col">
-            <h4>Komunitas</h4>
-            <ul>
-              <li><button onClick={() => smoothScroll('tribe')}>Join The Tribe</button></li>
-              <li><button onClick={() => smoothScroll('tribe')}>Volunteer</button></li>
-              <li><button onClick={() => smoothScroll('tribe')}>Merchandise</button></li>
-              <li><a href="#">Discord</a></li>
             </ul>
           </div>
 
@@ -47,7 +37,7 @@ export default function Footer() {
             <ul>
               <li><button onClick={() => smoothScroll('visit')}>Info Tiket</button></li>
               <li><button onClick={() => smoothScroll('visit')}>Jam Kunjungan</button></li>
-              <li><button onClick={() => smoothScroll('visit')}>Peta & Rute</button></li>
+              <li><button onClick={() => smoothScroll('visit')}>Galeri & Rute</button></li>
               <li><a href="#">FAQ</a></li>
             </ul>
           </div>

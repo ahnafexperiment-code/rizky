@@ -37,7 +37,7 @@ export default function Hero() {
       {/* Background */}
       <div className="hero-bg-container">
         <img
-          src="/assets/img/singosari/singosari-1.jpeg"
+          src="assets/img/singosari/singosari-1.jpeg"
           alt="Candi Singosari at golden hour"
           className="hero-bg-img"
         />

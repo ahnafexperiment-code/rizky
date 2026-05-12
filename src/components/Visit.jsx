@@ -1,6 +1,11 @@
 import { useReveal } from '../hooks/index.js';
+const TICKET_ROWS = [
+  { label: 'Candi Singosari', price: 'Gratis' },
+  { label: 'Candi Sumberawan', price: 'Rp 10.000' },
+  { label: 'Museum Singhasari', price: 'Gratis' },
+];
 
-export default function Visit({ showToast }) {
+export default function Visit() {
   const [ref, visible] = useReveal(0.1);
 
   return (
@@ -20,30 +25,16 @@ export default function Visit({ showToast }) {
             <h3>🎟️ Harga Tiket</h3>
             <div className="ticket-table">
               <div className="ticket-row header">
-                <span>Kategori</span><span>Harga</span>
+                <span>Lokasi</span><span>Harga</span>
               </div>
-              {[
-                { cat: '🇮🇩 WNI Dewasa', price: 'Rp 50.000' },
-                { cat: '👦 WNI Anak', price: 'Rp 25.000' },
-                { cat: '🌏 WNA Dewasa', price: 'USD 25' },
-                { cat: '👶 WNA Anak', price: 'USD 15' },
-              ].map(r => (
-                <div key={r.cat} className="ticket-row">
-                  <span>{r.cat}</span><span className="price">{r.price}</span>
+              {TICKET_ROWS.map((row) => (
+                <div key={row.label} className="ticket-row">
+                  <span>{row.label}</span>
+                  <span className="price">{row.price}</span>
                 </div>
               ))}
-              <div className="ticket-row highlight">
-                <span>⭐ Sunrise Package</span>
-                <span className="price">Rp 450.000</span>
-              </div>
             </div>
-            <button
-              className="btn btn-primary btn-full"
-              id="visit-ticket-btn"
-              onClick={() => showToast('🎟️ Pembelian tiket online segera tersedia!')}
-            >
-              Beli Tiket Online
-            </button>
+            <p className="section-desc">Update terakhir: 12 Mei 2026 (cek ulang sebelum berkunjung).</p>
           </div>
 
           {/* Hours Card */}
@@ -77,9 +68,9 @@ export default function Visit({ showToast }) {
             <h3>🖼️ Galeri & Rute</h3>
             <div className="visit-image-gallery" id="visit-image-gallery">
               <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '0.75rem' }}>
-                <img src="/assets/img/singosari/singosari-1.jpeg" alt="Candi Singosari" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
-                <img src="/assets/img/sumberawan/sumberawan-1.jpeg" alt="Candi Sumberawan" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
-                <img src="/assets/img/museum/museum-4.jpeg" alt="Museum Singhasari" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
+                <img src="assets/img/singosari/singosari-1.jpeg" alt="Candi Singosari" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
+                <img src="assets/img/sumberawan/sumberawan-1.jpeg" alt="Candi Sumberawan" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
+                <img src="assets/img/museum/museum-4.jpeg" alt="Museum Singhasari" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
               </div>
             </div>
             <div className="route-options">
