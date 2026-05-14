@@ -27,7 +27,7 @@ export default function Footer() {
             <ul>
               <li><button onClick={() => smoothScroll('home')}>Home</button></li>
               <li><button onClick={() => smoothScroll('explore')}>Explore</button></li>
-              <li><button onClick={() => smoothScroll('museum')}>Museum</button></li>
+              <li><button onClick={() => smoothScroll('places')}>Places</button></li>
               <li><button onClick={() => smoothScroll('story')}>Sejarah</button></li>
             </ul>
           </div>

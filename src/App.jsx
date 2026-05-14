@@ -5,7 +5,7 @@ import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import { Testimonials, UGCGallery } from './components/Gallery.jsx';
 import Explore from './components/Explore.jsx';
-import Museum from './components/Museum.jsx';
+import Places from './components/Places.jsx';
 import Story from './components/Story.jsx';
 import Quiz from './components/Quiz.jsx';
 import Visit from './components/Visit.jsx';
@@ -65,7 +65,7 @@ export default function App() {
         <Hero />
         <Testimonials />
         <Explore />
-        <Museum />
+        <Places />
         <Story />
         <Quiz showToast={showToast} />
         <UGCGallery />
