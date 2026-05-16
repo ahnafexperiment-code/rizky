@@ -84,6 +84,30 @@ export const storyChapters = [
     img: 'assets/img/museum/museum-8.jpeg',
     dir: 'right',
   },
+  {
+    year: 'Arsitektur',
+    title: 'Bahasa Visual Batu',
+    body: 'Di Candi Singosari, detail pahatan, proporsi tubuh arca, dan komposisi elemen bangunan menunjukkan bahwa arsitektur bukan sekadar konstruksi, tetapi juga pernyataan estetika dan simbolik.',
+    fact: 'Membaca situs lewat bentuk dan ornamen',
+    img: 'assets/img/singosari/singosari-3.jpeg',
+    dir: 'left',
+  },
+  {
+    year: 'Lanskap',
+    title: 'Sumberawan dan Ruang Hening',
+    body: 'Kawasan Sumberawan memperlihatkan hubungan antara situs dan lanskap alam. Pengalaman ruangnya lebih kontemplatif, memberi ritme berbeda dibanding kunjungan di candi utama.',
+    fact: 'Kontras suasana memperkaya rute',
+    img: 'assets/img/sumberawan/sumberawan-6.jpeg',
+    dir: 'right',
+  },
+  {
+    year: 'Pembelajaran',
+    title: 'Museum sebagai Ruang Konteks',
+    body: 'Label koleksi, panel sejarah, dan artefak di Museum Singhasari membantu pengunjung menghubungkan potongan-potongan informasi menjadi narasi yang lebih mudah dipahami.',
+    fact: 'Dari observasi visual ke pemahaman sejarah',
+    img: 'assets/img/museum/museum-17.jpeg',
+    dir: 'left',
+  },
 ];
 
 export const infoCards = [
@@ -118,12 +142,18 @@ export const infoCards = [
 ];
 
 export const ugcPhotos = [
-  { img: 'assets/img/singosari/singosari-5.jpeg', user: '@salsabila_wanderlust', cls: '' },
-  { img: 'assets/img/sumberawan/sumberawan-3.jpeg', user: '@rizky.explorer', cls: 'tall' },
-  { img: 'assets/img/sumberawan/sumberawan-4.jpeg', user: '@aulia.aesthetic', cls: '' },
-  { img: 'assets/img/singosari/singosari-2.jpeg', user: '@dimas.lens', cls: 'wide' },
-  { img: 'assets/img/museum/museum-8.jpeg', user: '@tiara.captures', cls: '' },
-  { img: 'assets/img/museum/museum-4.jpeg', user: '@naufal.photos', cls: '' },
+  { img: 'assets/img/singosari/singosari-5.jpeg', user: 'Pengunjung 1', cls: '' },
+  { img: 'assets/img/sumberawan/sumberawan-3.jpeg', user: 'Pengunjung 2', cls: 'tall' },
+  { img: 'assets/img/sumberawan/sumberawan-4.jpeg', user: 'Pengunjung 3', cls: '' },
+  { img: 'assets/img/singosari/singosari-2.jpeg', user: 'Pengunjung 4', cls: 'wide' },
+  { img: 'assets/img/museum/museum-8.jpeg', user: 'Pengunjung 5', cls: '' },
+  { img: 'assets/img/museum/museum-4.jpeg', user: 'Pengunjung 6', cls: '' },
+  { img: 'assets/img/sumberawan/sumberawan-7.jpeg', user: 'Pengunjung 7', cls: '' },
+  { img: 'assets/img/museum/museum-13.jpeg', user: 'Pengunjung 8', cls: 'wide' },
+  { img: 'assets/img/museum/museum-19.jpeg', user: 'Pengunjung 9', cls: '' },
+  { img: 'assets/img/singosari/singosari-4.jpeg', user: 'Pengunjung 10', cls: 'tall' },
+  { img: 'assets/img/museum/museum-21.jpeg', user: 'Pengunjung 11', cls: '' },
+  { img: 'assets/img/sumberawan/sumberawan-5.jpeg', user: 'Pengunjung 12', cls: '' },
 ];
 
 export const videoItems = [
@@ -174,4 +204,6 @@ export const museumGallery = [
   'assets/img/museum/museum-13.jpeg',
   'assets/img/museum/museum-17.jpeg',
   'assets/img/museum/museum-19.jpeg',
+  'assets/img/museum/museum-21.jpeg',
+  'assets/img/museum/museum-15.jpeg',
 ];

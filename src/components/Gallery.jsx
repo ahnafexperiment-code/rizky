@@ -36,8 +36,7 @@ function Lightbox({ photo, onClose }) {
       aria-modal="true"
     >
       <button className="modal-close" onClick={onClose} aria-label="Close">✕</button>
-      <img src={photo.img} alt={photo.user} onClick={e => e.stopPropagation()} />
-      <p className="ugc-lb-user">{photo.user}</p>
+      <img src={photo.img} alt="Foto pengunjung" onClick={e => e.stopPropagation()} />
       <p className="ugc-lb-tag">#SingosariHeritage</p>
     </div>
   );
@@ -68,11 +67,10 @@ export function UGCGallery() {
               onClick={() => setSelected(p)}
               role="button"
               tabIndex={0}
-              aria-label={`Photo by ${p.user}`}
+              aria-label="Foto pengunjung"
             >
-              <img src={p.img} alt={`Photo by ${p.user}`} loading="lazy" />
+              <img src={p.img} alt="Foto pengunjung" loading="lazy" />
               <div className="ugc-overlay">
-                <span className="ugc-user">{p.user}</span>
                 <span className="ugc-tag">#SingosariHeritage</span>
               </div>
             </div>
