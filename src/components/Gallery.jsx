@@ -1,23 +1,22 @@
 import { useState } from 'react';
 import { useReveal } from '../hooks/index.js';
 import { ugcPhotos } from '../data/content.js';
-import { testimonials } from '../data/content.js';
+import { funFacts } from '../data/content.js';
 
-// ── Testimonials ──────────────────────────────────────
+// ── Fun Facts ─────────────────────────────────────────
 export function Testimonials() {
   // Duplicate for infinite scroll
-  const all = [...testimonials, ...testimonials];
+  const all = [...funFacts, ...funFacts];
   return (
     <section className="testimonials-section">
       <div className="container">
-        <div className="section-label">💬 Kata Mereka</div>
+        <div className="section-label">📌 Fun Facts</div>
       </div>
       <div className="testimonials-track" id="testimonials-track">
         {all.map((t, i) => (
           <div key={i} className="testimonial-card">
-            <div className="test-avatar">{t.avatar}</div>
+            <div className="test-avatar">{t.icon}</div>
             <p>{t.text}</p>
-            <span>{t.author}</span>
           </div>
         ))}
       </div>

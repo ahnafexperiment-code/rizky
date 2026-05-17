@@ -142,18 +142,18 @@ export const infoCards = [
 ];
 
 export const ugcPhotos = [
-  { img: 'assets/img/singosari/singosari-5.jpeg', user: 'Pengunjung 1', cls: '' },
-  { img: 'assets/img/sumberawan/sumberawan-3.jpeg', user: 'Pengunjung 2', cls: 'tall' },
-  { img: 'assets/img/sumberawan/sumberawan-4.jpeg', user: 'Pengunjung 3', cls: '' },
-  { img: 'assets/img/singosari/singosari-2.jpeg', user: 'Pengunjung 4', cls: 'wide' },
-  { img: 'assets/img/museum/museum-8.jpeg', user: 'Pengunjung 5', cls: '' },
-  { img: 'assets/img/museum/museum-4.jpeg', user: 'Pengunjung 6', cls: '' },
-  { img: 'assets/img/sumberawan/sumberawan-7.jpeg', user: 'Pengunjung 7', cls: '' },
-  { img: 'assets/img/museum/museum-13.jpeg', user: 'Pengunjung 8', cls: 'wide' },
-  { img: 'assets/img/museum/museum-19.jpeg', user: 'Pengunjung 9', cls: '' },
-  { img: 'assets/img/singosari/singosari-4.jpeg', user: 'Pengunjung 10', cls: 'tall' },
-  { img: 'assets/img/museum/museum-21.jpeg', user: 'Pengunjung 11', cls: '' },
-  { img: 'assets/img/sumberawan/sumberawan-5.jpeg', user: 'Pengunjung 12', cls: '' },
+  { img: 'assets/img/singosari/singosari-5.jpeg', cls: '' },
+  { img: 'assets/img/sumberawan/sumberawan-3.jpeg', cls: 'tall' },
+  { img: 'assets/img/sumberawan/sumberawan-4.jpeg', cls: '' },
+  { img: 'assets/img/singosari/singosari-2.jpeg', cls: 'wide' },
+  { img: 'assets/img/museum/museum-8.jpeg', cls: '' },
+  { img: 'assets/img/museum/museum-4.jpeg', cls: '' },
+  { img: 'assets/img/sumberawan/sumberawan-7.jpeg', cls: '' },
+  { img: 'assets/img/museum/museum-13.jpeg', cls: 'wide' },
+  { img: 'assets/img/museum/museum-19.jpeg', cls: '' },
+  { img: 'assets/img/singosari/singosari-4.jpeg', cls: 'tall' },
+  { img: 'assets/img/museum/museum-21.jpeg', cls: '' },
+  { img: 'assets/img/sumberawan/sumberawan-5.jpeg', cls: '' },
 ];
 
 export const videoItems = [
@@ -162,12 +162,12 @@ export const videoItems = [
   { id: 'video-3', tag: '#MuseumWalk', title: 'Koleksi Utama Museum Singhasari', desc: 'Arca, fragmen batu, dan display budaya dalam satu rute singkat...', dur: '2:11', img: 'assets/img/museum/museum-17.jpeg' },
 ];
 
-export const testimonials = [
-  { avatar: '🧕', text: '"Bukan sekadar wisata biasa. Ini pengalaman yang bikin aku nangis karena kagum."', author: '— Salsabila, 22 th' },
-  { avatar: '👦', text: '"Virtual tournya gila banget. Kayak beneran ada di sana padahal lagi di kosan."', author: '— Rizky, 20 th' },
-  { avatar: '👩', text: '"Kontennya nggak boring kayak buku sejarah. Ini yang Gen Z butuhkan!"', author: '— Aulia, 19 th' },
-  { avatar: '🧑', text: '"Dapet badge \'Penjelajah Sejati\' dan langsung ku share ke semua socmed!"', author: '— Dimas, 21 th' },
-  { avatar: '👩‍🦱', text: '"Scrollytelling-nya smooth banget. Nggak kerasa udah baca 1000 tahun sejarah."', author: '— Tiara, 23 th' },
+export const funFacts = [
+  { icon: '⛩️', text: 'Candi Singosari merupakan salah satu peninggalan penting era Kerajaan Singhasari di Jawa Timur.', meta: 'Fakta 01' },
+  { icon: '🧘', text: 'Candi Sumberawan dikenal dengan bentuk stupa dan lanskap alam yang lebih tenang dibanding situs lain.', meta: 'Fakta 02' },
+  { icon: '🏛️', text: 'Museum Singhasari berfungsi sebagai ruang konteks untuk membaca artefak dan hubungan antar situs kawasan.', meta: 'Fakta 03' },
+  { icon: '🕰️', text: 'Jejak sejarah utama kawasan ini berkaitan dengan periode abad ke-13 hingga interpretasi modern di museum.', meta: 'Fakta 04' },
+  { icon: '🧱', text: 'Dokumentasi foto museum yang tersedia di situs ini mencakup lebih dari 20 sudut koleksi dan display.', meta: 'Fakta 05' },
 ];
 
 export const mapZones = [
