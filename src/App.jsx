@@ -4,7 +4,6 @@ import { useTheme, useToast } from './hooks/index.js';
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import { Testimonials, UGCGallery } from './components/Gallery.jsx';
-import Explore from './components/Explore.jsx';
 import Places from './components/Places.jsx';
 import Story from './components/Story.jsx';
 import Quiz from './components/Quiz.jsx';
@@ -64,7 +63,6 @@ export default function App() {
       <main>
         <Hero />
         <Testimonials />
-        <Explore />
         <Places />
         <Story />
         <Quiz showToast={showToast} />

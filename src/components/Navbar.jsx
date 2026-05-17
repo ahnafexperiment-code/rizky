@@ -3,7 +3,6 @@ import { useNavbarScrolled, useScrollSpy } from '../hooks/index.js';
 
 const NAV_ITEMS = [
   { id: 'home', label: 'Home' },
-  { id: 'explore', label: 'Explore' },
   { id: 'places', label: 'Places' },
   { id: 'story', label: 'The Story' },
   { id: 'visit', label: 'Visit' },
