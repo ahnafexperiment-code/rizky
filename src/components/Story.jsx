@@ -1,5 +1,5 @@
 import { useReveal, useTimelineProgress } from '../hooks/index.js';
-import { storyChapters, infoCards } from '../data/content.js';
+import { storyChapters, infoCards, artifactItems } from '../data/content.js';
 
 // ── Story Chapter ──────────────────────────────────────
 function Chapter({ chapter, index }) {
@@ -43,11 +43,24 @@ function InfoCard({ card }) {
   );
 }
 
+function ArtifactCard({ item }) {
+  return (
+    <article className="artifact-card" id={item.id}>
+      <img src={item.img} alt={item.title} loading="lazy" />
+      <div className="artifact-body">
+        <h4>{item.title}</h4>
+        <p>{item.desc}</p>
+      </div>
+    </article>
+  );
+}
+
 // ── Story Section ──────────────────────────────────────
 export default function Story() {
   const progress = useTimelineProgress('story');
   const [headerRef, headerVisible] = useReveal(0.15);
   const [infoRef, infoVisible] = useReveal(0.15);
+  const [artifactRef, artifactVisible] = useReveal(0.15);
 
   return (
     <section id="story" className="story-section">
@@ -80,6 +93,16 @@ export default function Story() {
           <h3 className="subsection-title">📊 Fakta dalam Angka</h3>
           <div className="infographic-grid">
             {infoCards.map(card => <InfoCard key={card.id} card={card} />)}
+          </div>
+        </div>
+
+        <div className={`artifacts-section reveal-up${artifactVisible ? ' revealed' : ''}`} ref={artifactRef}>
+          <h3 className="subsection-title">🏺 Artefak Utama</h3>
+          <p className="section-desc">Koleksi artefak memperjelas detail sejarah yang tidak selalu terlihat langsung di situs.</p>
+          <div className="artifacts-grid">
+            {artifactItems.map((item) => (
+              <ArtifactCard key={item.id} item={item} />
+            ))}
           </div>
         </div>
       </div>

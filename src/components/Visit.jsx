@@ -68,9 +68,9 @@ export default function Visit() {
             <h3>🖼️ Galeri & Rute</h3>
             <div className="visit-image-gallery" id="visit-image-gallery">
               <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '0.75rem' }}>
-                <img src="assets/img/singosari/singosari-1.jpeg" alt="Candi Singosari" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
-                <img src="assets/img/sumberawan/sumberawan-1.jpeg" alt="Candi Sumberawan" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
-                <img src="assets/img/museum/museum-4.jpeg" alt="Museum Singhasari" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
+                <img src="assets/img/singosari/singosari-new-1.jpeg" alt="Candi Singosari" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
+                <img src="assets/img/sumberawan/sumberawan-new-1.jpeg" alt="Candi Sumberawan" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
+                <img src="assets/img/museum/museum-new-1.jpeg" alt="Museum Singhasari" style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '12px' }} />
               </div>
             </div>
             <div className="route-options">

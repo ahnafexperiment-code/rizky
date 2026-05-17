@@ -10,11 +10,14 @@ import Quiz from './components/Quiz.jsx';
 import Visit from './components/Visit.jsx';
 import Reviews from './components/Reviews.jsx';
 import Footer from './components/Footer.jsx';
+import SitePage from './components/SitePage.jsx';
+import { sitePages } from './data/content.js';
 import { ThemeToggle, Toast } from './components/UI.jsx';
 
 export default function App() {
   const { theme, toggle: toggleTheme } = useTheme();
   const { toast, showToast } = useToast();
+  const [route, setRoute] = useState(() => window.location.hash || '#/');
 
   // Ripple effect on all .btn elements
   useEffect(() => {
@@ -50,6 +53,49 @@ export default function App() {
     console.log('%cSINGOSARI CULTURAL SITE', 'font-size:32px;font-weight:900;color:#d4af37;');
     console.log('%cSingosari, Sumberawan, dan Museum Singhasari', 'color:#a78bfa;font-size:14px');
   }, []);
+
+  useEffect(() => {
+    const onHashChange = () => setRoute(window.location.hash || '#/');
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+
+  const siteMatch = route.match(/^#\/site\/([\w-]+)/);
+  const activeSite = siteMatch ? sitePages.find((s) => s.slug === siteMatch[1]) : null;
+
+  useEffect(() => {
+    if (siteMatch) {
+      document.title = activeSite
+        ? `${activeSite.name} | Singosari Cultural Site`
+        : 'Halaman Tidak Ditemukan | Singosari Cultural Site';
+      return;
+    }
+    document.title = 'Singosari Cultural Site';
+  }, [siteMatch, activeSite]);
+
+  if (siteMatch) {
+    return (
+      <>
+        <ThemeToggle theme={theme} onToggle={toggleTheme} />
+        {activeSite ? (
+          <SitePage site={activeSite} />
+        ) : (
+          <main className="site-page">
+            <section className="site-page-hero">
+              <div className="container">
+                <a href="#/" className="btn btn-ghost btn-sm">Kembali ke Beranda</a>
+                <div className="site-page-head">
+                  <h1>Halaman tidak ditemukan</h1>
+                  <p>Rute situs yang diminta tidak tersedia.</p>
+                </div>
+              </div>
+            </section>
+          </main>
+        )}
+        <Toast toast={toast} />
+      </>
+    );
+  }
 
   return (
     <>
