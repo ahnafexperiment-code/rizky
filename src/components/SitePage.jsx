@@ -1,5 +1,23 @@
 export default function SitePage({ site }) {
   if (!site) return null;
+  const pageVideoBySlug = {
+    'museum-singhasari': {
+      sectionTitle: 'Video Museum',
+      title: 'Museum Singhasari Video',
+      embedUrl: 'https://www.youtube.com/embed/m_mhESjbkeo',
+    },
+    'candi-singosari': {
+      sectionTitle: 'Video Candi',
+      title: 'Candi Singosari Video',
+      embedUrl: 'https://www.youtube.com/embed/P8lR5R14uM0',
+    },
+    'candi-sumberawan': {
+      sectionTitle: 'Video Candi',
+      title: 'Candi Sumberawan Video',
+      embedUrl: 'https://www.youtube.com/embed/bdVTBw47ceM',
+    },
+  };
+  const pageVideo = pageVideoBySlug[site.slug];
 
   return (
     <main className="site-page">
@@ -29,6 +47,25 @@ export default function SitePage({ site }) {
           </div>
         </div>
       </section>
+
+      {pageVideo && (
+        <section className="site-page-section">
+          <div className="container">
+            <h2 className="subsection-title">{pageVideo.sectionTitle}</h2>
+            <div className="site-page-video">
+              <iframe
+                width="100%"
+                height="420"
+                src={pageVideo.embedUrl}
+                title={pageVideo.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="site-page-section">
         <div className="container">

@@ -19,7 +19,7 @@ export default function Places() {
 
         <div className="places-stack">
           {sitePages.map((place) => (
-            <section key={place.slug} id={`place-${place.slug}`} className="place-card">
+            <article key={place.slug} id={`place-${place.slug}`} className="place-card">
               <img src={place.image} alt={place.name} className="place-image" loading="lazy" />
               <div className="place-content">
                 <h3>{place.name}</h3>
@@ -42,7 +42,7 @@ export default function Places() {
                   </a>
                 </div>
               </div>
-            </section>
+            </article>
           ))}
         </div>
       </div>

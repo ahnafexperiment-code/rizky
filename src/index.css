@@ -1019,6 +1019,13 @@ section { padding: var(--space-xl) 0; position: relative; }
   max-width: 520px;
 }
 
+.site-page-video {
+  border: 1px solid var(--clr-border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
 .story-section {
   background: var(--clr-bg-2);
 }
